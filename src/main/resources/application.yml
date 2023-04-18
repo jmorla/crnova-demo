@@ -1,0 +1,16 @@
+spring:
+  flyway:
+    enabled: true
+    locations: classpath:/db/scripts
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo
+    username: postgres
+    password: postgres
+
+  jpa:
+    spring:
+      jpa:
+      properties:
+      hibernate:
+      dialect: org.hibernate.dialect.PostgreSQL81Dialect
